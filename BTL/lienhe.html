@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - MushroomPL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/OIP-removebg-preview.png" alt="Logo" width="30%"> MushroomPL
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sanpham.html">Sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dichvu.html">Dịch vụ</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="lienhe.html">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </li>
+                <li>
+                    <a href="giohang.html" class="btn btn-outline-dark">
+                        <img src="img/OIP-fotor-20240619191455.jpg" alt="">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dangnhap.html">Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Liên Hệ</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p>Mọi thắc mắc và liên hệ vui lòng gửi tin nhắn cho chúng tôi.</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Họ và tên</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Nhập họ và tên" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Nhập email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tin nhắn</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Nhập tin nhắn" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                </form>
+                <div class="alert alert-success mt-3 d-none" id="contact-success">
+                    Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ sớm phản hồi lại!
+                </div>
+                <div class="alert alert-danger mt-3 d-none" id="contact-error">
+                    Đã có lỗi xảy ra trong quá trình gửi tin nhắn. Vui lòng thử lại sau!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p>Thông tin liên hệ:</p>
+                <ul class="list-unstyled">
+                    <li><strong>Địa chỉ:</strong> Phú Lãm, Hà Đông, Hà Nội</li>
+                    <li><strong>Email:</strong> Beakjoen@gmail.com</li>
+                    <li><strong>Phone:</strong> 0383142174</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5 class="text-uppercase">MushroomPL</h5>
+                    <p>Địa chỉ: Phú Lãm, Hà Đông, Hà Nội</p>
+                    <p>Email: Beakjoen@gmail.com</p>
+                    <p>Phone: 0383142174</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5 class="text-uppercase">Theo dõi chúng tôi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com/profile.php?id=100052966367083&mibextid=ZbWKwL">Facebook</a></li>
+                        <li><a href="#!">Twitter</a></li>
+                        <li><a href="#!">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center">© 2024 MushroomPL. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="JS/scripts.js"></script>
+    <script src="JS/contact.js"></script>
+</body>
+
+</html>
